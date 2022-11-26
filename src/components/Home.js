@@ -42,7 +42,7 @@ export const Home = () => {
                                 {line1.split("").map((char, index) =>{
                                     return (
                                         <motion.span className="title is-1 has-text-white is-italic" key={char + "-" + index} variants={letter}>
-                                            {char}
+                                            <strong>{char}</strong>
                                         </motion.span>
                                     )
                                 })}

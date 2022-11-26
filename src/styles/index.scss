@@ -6,6 +6,7 @@
 $beige-lighter: #F9F6EF;
 $black: #373234;
 $blue: #44848E;
+$yellow: #FDFD96;
 $primary-text: "EB Garamond", serif;
 $secondary-text: "Poppins", sans-serif;
 
@@ -14,6 +15,7 @@ $family-sans-serif: $primary-text;
 $text: $beige-lighter;
 $white: $beige-lighter;
 $body-family: $secondary-text;
+$primary: $yellow;
 
 @import '../../node_modules/bulma/bulma.sass';
 
