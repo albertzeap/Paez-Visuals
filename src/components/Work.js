@@ -10,12 +10,12 @@ import {Link} from "react-router-dom";
 const projects = [
     {
         name: "Rene and Monica Wedding Highlight",
-        url: "https://images.unsplash.com/photo-1548197253-652ffe79752c"
+        url: "https://www.youtube.com/embed/qPy3Z97zzkA"
 
     },
     {
         name: "LifeTeen Summer Camp Weekly Recap",
-        url: ""
+        url: "https://www.youtube.com/embed/96mxTgGyKnc"
     },
     {
         name: "Hawaii Travel Video",
@@ -34,7 +34,6 @@ const projects = [
 
 
 export const Work = () => {
-    // style={{writingMode: "vertical-rl", textOrientation: "upright"}}
 
     return (
         <>
@@ -48,7 +47,6 @@ export const Work = () => {
                                 </div>    
                                 <div className="column is-one-third">
                                     <WorkSlider projects={projects}/>
-                                    {/* <h1 className="title has-text-centered has-text-white is-uppercase">Portfolio</h1> */}
                                 </div>    
                                 <div className="column is-one-third"></div>    
                                 </div>

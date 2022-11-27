@@ -16,22 +16,6 @@ export const WorkSlider = ({projects}) => {
         const newIndex = isLastSlide ? 0 : currentIndex + 1;
         setCurrentIndex(newIndex);
     };
-
-    const sliderStyles = {
-        height: "100%",
-        position: "relative",
-
-    };
-
-    const slideStyles = {
-        width: "100%",
-        height: "100%",
-        borderRadius: "10px",
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-        backgroundUrl: `url(${projects[currentIndex].url})`
-
-    };
     
     const arrowStyles = {    
         fontSize: "45px",
@@ -40,9 +24,9 @@ export const WorkSlider = ({projects}) => {
     return (
         <>
                 <div className="container">
-                    <div>
+          
                         <WorkCard project={projects[currentIndex]} />
-                    </div>
+             
                 </div>
                 <br/>
                 <div className="container is-flex is-justify-content-space-between	">
