@@ -4,9 +4,6 @@ import Transition from "./Transition";
 import { WorkCard } from "./WorkCard";
 import { WorkSlider } from "./WorkSlider";
 
-import {Link} from "react-router-dom";
-
-
 const projects = [
     {
         name: "Rene and Monica Wedding Highlight",

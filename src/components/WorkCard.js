@@ -21,7 +21,7 @@ export const WorkCard = ({project: {name, url}}) => {
 
                     
             <div className="container is-flex is-justify-content-center">
-                <iframe style={iframeStyle} src={url} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                <iframe style={iframeStyle} src={url} title="YouTube video player" frameBorder="3" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             </div>
                                  
             {/* </motion.div>  */}

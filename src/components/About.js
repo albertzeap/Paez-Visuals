@@ -21,7 +21,7 @@ export const About = () => {
                                 <strong className="has-text-primary is-italic"> 4 years of experience</strong>, 
                                 I have honed my skills so that I am capable of creating videos that possess 
                                 <strong className="has-text-primary is-italic"> story and meaning</strong>. 
-                                So far I have filmed and editied 
+                                So far I have filmed and edited 
                                 <strong className="has-text-primary is-italic"> event recaps</strong>, 
                                 <strong className="has-text-primary is-italic"> conferences</strong>, 
                                 <strong className="has-text-primary is-italic"> summer camps</strong>, 
