@@ -1,9 +1,22 @@
-import React from "react";
+import React, {useEffect, useRef} from "react";
 import backgroundVideo from "../assets/videobackground.mp4"
+import backgroundPoster from "../assets/backgroundPoster.png"
 
 export const Background = () => {
+    const ref = useRef();
+
+    useEffect(() => {
+        ref &&
+          ref.current
+            .play()
+            .then(() => {})
+            .catch((err) => {
+              // Video couldn't play, low power play button showing.
+            });   
+      }, []);
+
     return(
-        <video id="background-video" autoPlay loop muted poster={backgroundVideo} style={{
+        <video ref={ref} id="background-video" preload="auto" loop muted poster={backgroundPoster} style={{
                 width: "100vw",
                 height: "100vh",
                 objectFit: "cover",
