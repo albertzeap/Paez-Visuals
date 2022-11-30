@@ -4,15 +4,15 @@ import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 
 export const Services = () => {
     const [isWedding, showWedding] = useState(false);
-    const [isEvent, showEvent] = useState(false);
+    // const [isEvent, showEvent] = useState(false);
     const [isHighlight, showHighlight] = useState(false);
 
     const handleShowWedding = () => {
         isWedding ? showWedding(false) : showWedding(true);
     }
-    const handleShowEvent = () => {
-        isEvent ? showEvent(false) : showEvent(true);
-    }
+    // const handleShowEvent = () => {
+    //     isEvent ? showEvent(false) : showEvent(true);
+    // }
     const handleShowHighlight = () => {
         isHighlight ? showHighlight(false) : showHighlight(true);
     }
@@ -30,7 +30,7 @@ export const Services = () => {
                                     <p className="subtitle is-italic has-text-weight-light has-text-primary"> From $1000 - $1500</p>
                                     <button className="button is-ghost has-text-white" onClick={handleShowWedding}><MoreHorizIcon fontSize="large"/></button>
                                     {isWedding ? 
-                                        <>
+                                        <>  
                                             <Transition>
 
                                                 <p className="is-italic is-uppercase has-text-weight-semibold">Before Wedding Day Services</p>
@@ -65,7 +65,7 @@ export const Services = () => {
                                     
                                 </div>
 
-<div className="column">
+                            <div className="column">
                                     <h1 className="title has-text-white is-uppercase is-italic">Event Recaps</h1>
                                     <p className="subtitle is-italic has-text-weight-light has-text-primary"> From $1000</p>
                                     

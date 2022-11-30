@@ -1,7 +1,5 @@
-import { motion } from "framer-motion";
-import React ,{useRef, useState, useEffect} from "react";
+import React from "react";
 import Transition from "./Transition";
-import { WorkCard } from "./WorkCard";
 import { WorkSlider } from "./WorkSlider";
 
 const projects = [
@@ -16,15 +14,15 @@ const projects = [
     },
     {
         name: "Hawaii Travel Video",
-        url: ""
+        url: "https://www.youtube.com/embed/_1O5gGJHW1A"
     },
     {
-        name: "Event",
-        url: ""
+        name: "Cooking Highlight Reel",
+        url: "https://www.youtube.com/embed/C7V8C_64tgM"
     },
     {
-        name: "MFC Echo Conference Recap",
-        url: ""
+        name: "Renewal of Vows Event Recap",
+        url: "https://www.youtube.com/embed/s2f7-QG5foo"
     },
 ];
 
