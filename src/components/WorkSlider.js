@@ -24,9 +24,7 @@ export const WorkSlider = ({projects}) => {
     return (
         <>
                 <div className="container">
-          
-                        <WorkCard project={projects[currentIndex]} />
-             
+                    <WorkCard project={projects[currentIndex]} />
                 </div>
                 <br/>
                 <div className="container is-flex is-justify-content-space-between	">
