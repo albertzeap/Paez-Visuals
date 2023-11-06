@@ -1,10 +1,16 @@
 import React from "react";
 import Transition from "./Transition";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet-async";
 
 export const About = () => {
     return (
         <>
+            <Helmet>
+                <title>About</title>
+                <meta name="description" content="About me: I am a freelance videographer and photographer based in California. Experience in weddings, event recaps, short films, etc."/>
+                <link rel="canonical" href="/about"/>
+            </Helmet>
             <Transition>
             <motion.div layout style={{ borderRadius: 20 }} />
                 <section className="hero is-fullheight-with-navbar">

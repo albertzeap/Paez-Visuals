@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Transition from "./Transition";
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
+import { Helmet } from "react-helmet-async";
 
 export const Services = () => {
     const [isWedding, showWedding] = useState(false);
@@ -19,8 +20,13 @@ export const Services = () => {
 
     return (
         <>
+            <Helmet>
+                <title>Services</title>
+                <meta name="description" content="Check out the services I provide: Weddings, Business Marketing, and Photography."/>
+                <link rel="canonical" href="/services"/>
+            </Helmet>
             <Transition>
-
+                
                 <section className="hero is-fullheight-with-navbar">
                     <div className="hero-body">
                         <div className="container has-text-centered">

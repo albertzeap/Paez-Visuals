@@ -1,6 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Transition from "./Transition";
+import { Helmet } from "react-helmet-async";
+
 
 const line1 = "PAEZ VISUALS";
 const line2 = "Freelance Videographer and Photographer";
@@ -25,12 +27,17 @@ const letter = {
 export const Home = () => {
     return (
         <>
+            <Helmet>
+                <title>Home</title>
+                <meta name="description" content="Paez Visuals: Freelance Videographer and Photographer"/>
+                <link rel="canonical" href="/"/>
+            </Helmet>
             <Transition>
                 <section className="hero is-fullheight-with-navbar">
                     <div className="hero-body">
                         <div className="container has-text-centered">
                             <main>
-                                <motion.h3
+                                <motion.h1
                                     className="load-screen--message"
                                     variants={sentence}
                                     initial="hidden"
@@ -52,7 +59,7 @@ export const Home = () => {
                                         )
                                     })}
                                 
-                                </motion.h3>
+                                </motion.h1>
                             </main>
                         </div>
                     </div>

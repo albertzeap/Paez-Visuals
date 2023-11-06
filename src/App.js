@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Routes, useLocation} from "react-router
 import { About } from "./components/About";
 import { Background } from "./components/Background";
 import { Contact } from "./components/Contact";
-import { Gear } from "./components/Gear";
 import { Home } from "./components/Home";
 import { Services } from "./components/Services";
 import { Work } from "./components/Work";

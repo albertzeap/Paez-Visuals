@@ -61,7 +61,7 @@ export const Form = () => {
 
     return (
         <>
-            <h1>Have specific questions or inquiries? Feel free to message me!</h1>
+            <h2>Have specific questions or inquiries? Feel free to message me!</h2>
             <br/>
             <form id="myForm" onSubmit={submit}>
                 <div className="field"> 

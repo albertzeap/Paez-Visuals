@@ -1,6 +1,7 @@
 import React from "react";
 import Transition from "./Transition";
 import { WorkSlider } from "./WorkSlider";
+import { Helmet } from "react-helmet-async";
 
 const projects = [
     {
@@ -32,6 +33,11 @@ export const Work = () => {
 
     return (
         <>
+            <Helmet>
+                <title>Work</title>
+                <meta name="description" content="Check out my work with wedding videos, highlight reels, etc."/>
+                <link rel="canonical" href="/work"/>
+            </Helmet>
             <Transition>
                 <section className="hero is-fullheight-with-navbar">
                     <div className="hero-body">
