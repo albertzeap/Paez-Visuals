@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Transition from "./Transition";
 
 const line1 = "PAEZ VISUALS";
-const line2 = "Freelance Videographer and Editor";
+const line2 = "Freelance Videographer and Photographer";
 const sentence = {
     hidden: {opacity: 1},
     visible: {

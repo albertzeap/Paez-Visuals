@@ -27,8 +27,9 @@ export const Services = () => {
                             <div className="columns">
                                 <div className="column">
                                     <h1 className="title has-text-white is-uppercase is-italic">Weddings</h1>
-                                    <p className="subtitle is-italic has-text-weight-light has-text-primary"> From $1000 - $1500</p>
+                                    <p className="subtitle is-italic has-text-weight-light has-text-primary"> Starting at $2000</p>
                                     <button className="button is-ghost has-text-white" onClick={handleShowWedding}><MoreHorizIcon fontSize="large"/></button>
+                                    
                                     {isWedding ? 
                                         <>  
                                             <Transition>
@@ -45,105 +46,72 @@ export const Services = () => {
                                                 </ul>
                                                 <br/>
 
-                                                <p className="is-italic is-uppercase has-text-weight-semibold">Post Wedding Day Services</p>
-                                                <ul className="has-text-primary">
-                                                    <li>2 revisions</li>
-                                                    <li>Color Grading</li>
-                                                    <li>Sound Design and SFX</li>
-                                                </ul>
-                                                <br/>
-
                                                 <p className="is-italic is-uppercase has-text-weight-semibold">Deliverables</p>
                                                 <ul className="has-text-primary">
                                                     <li>30 Second Trailer Video</li>
                                                     <li>3-5 minute Highlight Video</li>
                                                     <li>Uncut Moments Video</li>
+                                                    <li>USB Drive of Videos</li>
                                                 </ul>
                                             </Transition>
-                                        </> : ""
+                                        </> : <p><i>Click for more info</i></p>
                                     }
                                     
-                                </div>
-
-                            <div className="column">
-                                    <h1 className="title has-text-white is-uppercase is-italic">Event Recaps</h1>
-                                    <p className="subtitle is-italic has-text-weight-light has-text-primary"> From $1000</p>
-                                    <button className="button is-ghost has-text-white" onClick={handleShowEvent}><MoreHorizIcon fontSize="large"/></button>
-                                    
-                                    {isEvent ? 
-                                        <>
-                                            <Transition>
-                                                <p className="is-italic is-uppercase has-text-weight-semibold">Before Event Services</p>
-                                                <ul className="has-text-primary">
-                                                    <li>Consultation Sessions</li>
-                                                </ul>
-                                                <br/>
-
-                                                <p className="is-italic is-uppercase has-text-weight-semibold">Event Day Services</p>
-                                                <ul className="has-text-primary">
-                                                    <li>Full Event Coverage</li>
-                                                </ul>
-                                                <br/>
-
-                                                <p className="is-italic is-uppercase has-text-weight-semibold">Post Event Day Services</p>
-                                                <ul className="has-text-primary">
-                                                    <li>2 revisions</li>
-                                                    <li>Color Grading</li>
-                                                    <li>Sound Design and SFX</li>
-                                                </ul>
-                                                <br/>
-
-                                                <p className="is-italic is-uppercase has-text-weight-semibold">Deliverables</p>
-                                                <ul className="has-text-primary">
-                                                    <li>30 Second Trailer Video</li>
-                                                    <li>3-5 minute Highlight Video</li>
-                                                </ul>
-                                            </Transition>
-                                        </> : ""
-                                    }
-
                                 </div>
 
                                 <div className="column">
-                                    <h1 className="title has-text-white is-uppercase is-italic">Highlight Reels</h1>
-                                    <p className="subtitle is-italic has-text-weight-light has-text-primary">From $300 - $800</p>
+                                    <h1 className="title has-text-white is-uppercase is-italic">Business Marketing</h1>
+                                    <p className="subtitle is-italic has-text-weight-light has-text-primary"> Starting at $2000</p>
                                     <button className="button is-ghost has-text-white" onClick={handleShowHighlight}><MoreHorizIcon fontSize="large"/></button>
                                     
                                     {isHighlight ? 
                                         <>
                                             <Transition>
-
-                                                <p className="is-italic is-uppercase has-text-weight-semibold">Before Shoot Services</p>
+                                                <p className="is-italic is-uppercase has-text-weight-semibold">Before Production Services</p>
                                                 <ul className="has-text-primary">
                                                     <li>Consultation Sessions</li>
-                                                    <li>Idea Drafting</li>
                                                 </ul>
                                                 <br/>
 
-                                                <p className="is-italic is-uppercase has-text-weight-semibold">During Shoot Services</p>
+                                                <p className="is-italic is-uppercase has-text-weight-semibold">Production Day Services</p>
                                                 <ul className="has-text-primary">
-                                                    <li>Full Video Coverage</li>
-                                                    <li>Active Consultation</li>
-                                                </ul>
-                                                <br/>
-
-                                                <p className="is-italic is-uppercase has-text-weight-semibold"> Post Shoot Services</p>
-                                                <ul className="has-text-primary">
-                                                    <li>Unlimited Revisions</li>
-                                                    <li>Color Grading</li>
-                                                    <li>Sound Design and SFX</li>
+                                                    <li>2-hour production</li>
                                                 </ul>
                                                 <br/>
 
                                                 <p className="is-italic is-uppercase has-text-weight-semibold">Deliverables</p>
                                                 <ul className="has-text-primary">
-                                                    <li>30s - 2 minute Highlight Reel</li>
+                                                    <li>10 highlight reels {'('}5-15 seconds per reel{')'}</li>
+                                                    <li>10 product pictures</li>
                                                 </ul>
                                             </Transition>
-                                        </> : ""
+                                        </> :  <p><i>Click for more info</i></p>
                                     }
+                                </div> 
+                                <div className="column">
+                                    <h1 className="title has-text-white is-uppercase is-italic">Photography</h1>
+                                    <p className="subtitle is-italic has-text-weight-light has-text-primary"> Starting at $125 per hour</p>
+                                    <button className="button is-ghost has-text-white" onClick={handleShowEvent}><MoreHorizIcon fontSize="large"/></button>
+                                    
+                                    {isEvent ? 
+                                        <>
+                                            <Transition>
+                                                <p className="is-italic is-uppercase has-text-weight-semibold">Before Session Services</p>
+                                                <ul className="has-text-primary">
+                                                    <li>Consultation Sessions</li>
+                                                    <li>Location Scouting</li>
+                                                </ul>
+                                                <br/>
 
-                                </div>
+                                                <p className="is-italic is-uppercase has-text-weight-semibold">Deliverables</p>
+                                                <ul className="has-text-primary">
+                                                    <li>Online Gallery of high quality pictures</li>
+                                                </ul>
+                                            </Transition>
+                                        </> :  <p><i>Click for more info</i></p>
+                                    }
+                                </div> 
+                           
                             </div>
                         </div>
                     </div>

@@ -21,7 +21,7 @@ const Animated = () => {
               <Route path="/about" element={<About/>}/>
               <Route path="/work" element={<Work/>}/>
               <Route path="/services" element={<Services/>}/>
-              <Route path="/gear" element={<Gear/>}/>
+              {/* <Route path="/gear" element={<Gear/>}/> */}
               <Route path="/contact" element={<Contact/>}/>
           </Routes>
       </AnimatePresence>

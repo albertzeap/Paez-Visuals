@@ -10,14 +10,14 @@ export const About = () => {
                 <section className="hero is-fullheight-with-navbar">
                     <div className="hero-body">
                         <div className=" container">
-                            <h1 className="title has-text-white">I am a freelance videographer and editor based in California.</h1>
+                            <h1 className="title has-text-white">I am a freelance videographer and photographer based in California.</h1>
                             <p className="subtitle is-6 has has-text-white">
                                 I simply enjoy the 
                                 {/* <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.1 }}></motion.div> */}
                                 <strong className="has-text-primary is-italic"> art of creating </strong> 
                                 and 
                                 <strong className="has-text-primary is-italic"> bringing visions to life</strong>. 
-                                Whether it be simple travel videos for my own amusement or event recaps for clients, I find joy in it all. Within my 
+                                Whether it be simple travel videos for my own amusement, event recaps, or product pictures for clients, I find joy in it all. Within my 
                                 <strong className="has-text-primary is-italic"> 4 years of experience</strong>, 
                                 I have honed my skills so that I am capable of creating videos that possess 
                                 <strong className="has-text-primary is-italic"> story and meaning</strong>. 
