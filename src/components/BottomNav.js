@@ -11,8 +11,7 @@ export const BottomNav = () => {
                     <Link className="is-italic"  to="/about">02-About</Link>
                     <Link className="is-italic"  to="/work">03-Work</Link>
                     <Link className="is-italic"  to="/services">04-Services</Link>
-                    {/* <Link className="is-italic"  to="/gear">05-Gear</Link> */}
-                    <Link className="is-italic"  to="/contact">06-Contact</Link>
+                    <Link className="is-italic"  to="/contact">05-Contact</Link>
                 </div>
             </nav>
            

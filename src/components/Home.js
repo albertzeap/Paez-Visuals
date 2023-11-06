@@ -29,38 +29,33 @@ export const Home = () => {
                 <section className="hero is-fullheight-with-navbar">
                     <div className="hero-body">
                         <div className="container has-text-centered">
-                            {/* <motion.div 
-                                whileHover={{ scale: 1.1 }}
-                                whileTap={{ scale: 1.1 }}
-                            > */}
-                            <motion.h3
-                                className="load-screen--message"
-                                variants={sentence}
-                                initial="hidden"
-                                animate="visible"
-                                >
-                                {line1.split("").map((char, index) =>{
-                                    return (
-                                        <motion.span className="title is-1 has-text-white is-italic" key={char + "-" + index} variants={letter}>
-                                            <strong>{char}</strong>
-                                        </motion.span>
-                                    )
-                                })}
-                                <br/>
-                                {line2.split("").map((char,index) => {
-                                    return (
-                                        <motion.span className="subtitle" key={char + "-" + index} variants={letter}>
-                                            {char}
-                                        </motion.span>
-                                    )
-                                })}
-                                {/* <h1 className="title is-1 is-uppercase has-text-white is-italic">Paez Visuals</h1>
-                                <p className="subtitle">Freelance Videographer and Editor</p> */}
-                            </motion.h3>
-                            {/* </motion.div> */}
+                            <main>
+                                <motion.h3
+                                    className="load-screen--message"
+                                    variants={sentence}
+                                    initial="hidden"
+                                    animate="visible"
+                                    >
+                                    {line1.split("").map((char, index) =>{
+                                        return (
+                                            <motion.span className="title is-1 has-text-white is-italic" key={char + "-" + index} variants={letter}>
+                                                <strong>{char}</strong>
+                                            </motion.span>
+                                        )
+                                    })}
+                                    <br/>
+                                    {line2.split("").map((char,index) => {
+                                        return (
+                                            <motion.span className="subtitle" key={char + "-" + index} variants={letter}>
+                                                {char}
+                                            </motion.span>
+                                        )
+                                    })}
+                                
+                                </motion.h3>
+                            </main>
                         </div>
                     </div>
-                    {/* <BottomNav/> */}
                 </section>
             </Transition>
         </>

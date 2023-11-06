@@ -36,16 +36,15 @@ export const Work = () => {
                 <section className="hero is-fullheight-with-navbar">
                     <div className="hero-body">
                         <div className="container">
-                            <div className="container is-fluid">
-                                <div className="columns">
-                                <div className="column is-one-third">
-                                </div>    
-                                <div className="column is-one-third">
+                            <div className="columns">
+                                <div className="column"></div>
+                                <div className="column">
                                     <WorkSlider projects={projects}/>
-                                </div>    
-                                <div className="column is-one-third"></div>    
                                 </div>
+                                <div className="column"></div>
                             </div>
+                        
+                          
                         </div>
                     </div>
                 </section>

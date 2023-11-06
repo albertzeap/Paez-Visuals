@@ -37,7 +37,6 @@ export const Gear = () => {
                             </div>
                         </div>
                     </div>
-                    {/* <BottomNav/> */}
                 </section>
             </Transition>
         </>

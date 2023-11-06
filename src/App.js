@@ -14,14 +14,13 @@ import { AnimatePresence } from 'framer-motion';
 const Animated = () => {
   const location = useLocation();
   return (
-      <AnimatePresence exitBeforeEnter >
+      <AnimatePresence mode="wait" >
 
           <Routes location={location} key={location.pathname}>
               <Route path="/" exact element={<Home/>}/>
               <Route path="/about" element={<About/>}/>
               <Route path="/work" element={<Work/>}/>
               <Route path="/services" element={<Services/>}/>
-              {/* <Route path="/gear" element={<Gear/>}/> */}
               <Route path="/contact" element={<Contact/>}/>
           </Routes>
       </AnimatePresence>

@@ -32,7 +32,6 @@ export const Contact = () => {
                             </div>
                         </div>
                     </div>
-                    {/* <BottomNav/> */}
                 </section>
             </Transition>
         </>

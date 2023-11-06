@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import { motion } from "framer-motion";
 import { WorkCard } from "./WorkCard";
 
 export const WorkSlider = ({projects}) => {
@@ -18,20 +17,20 @@ export const WorkSlider = ({projects}) => {
     };
     
     const arrowStyles = {    
-        fontSize: "45px",
+        fontSize: "3rem",
     };
 
     return (
         <>
-                <div className="container">
-                    <WorkCard project={projects[currentIndex]} />
-                </div>
-                <br/>
-                <div className="container is-flex is-justify-content-space-between	">
-                    <div className="button has-text-white is-ghost" onClick={goToPrevious} style={arrowStyles} >{'<'}</div>
-                    <div className="button has-text-white is-ghost" onClick={goToNext} style={arrowStyles}>{'>'}</div>
-                </div>
+                
                 <h1 className="subtitle has-text-centered"><strong className="has-text-primary">{projects[currentIndex].name}</strong></h1>
+                <div className="level">
+                    <div className="button has-text-white is-ghost level-item" onClick={goToPrevious} style={arrowStyles} >{'<'}</div>
+                    <div className="level-item">
+                        <WorkCard project={projects[currentIndex]} />
+                    </div>
+                    <div className="button has-text-white is-ghost level-item" onClick={goToNext} style={arrowStyles}>{'>'}</div>
+                </div>
         </>
     );
 }
